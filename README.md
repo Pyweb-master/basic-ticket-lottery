@@ -19,7 +19,7 @@ npm install -g truffle
 Install Ganache for local test environment
 ### Get Infura Connection
 Login to [infura.io](https://infura.io).
-Create project and get "https://<NETWORK>.infura.io/v3/<PROJECT-ID>"
+Create project and get url https://<NETWORK>.infura.io/v3/<PROJECT-ID>
 ### Generate MNEMONIC
 Make .secret file on root directory and save your mnemonic(12 words).
 ## Installation
@@ -31,15 +31,15 @@ npm install
 ```bash
 truffle compile
 ```
+### For Test
+```bash
+truffle test
+```
 ### Migrate
 ```bash
 truffle migrate
 ```
 truffle migrate or truffle migrate --network ropsten or truffle migrate --network kovan
-### For Test
-```bash
-truffle test
-```
 ## Launch 
 ```bash
 npm run dev
