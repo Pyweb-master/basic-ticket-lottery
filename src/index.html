@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Lottery Test</title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  </head>
+
+  <body id="page-top">
+
+    <header class="bg-primary text-white py-5">
+      <div class="container text-center">
+        <p>
+          This project was built for my client who wanted to learn interaction between solidity and web3.<br>
+          Simple design and poor logic implemented, but you can see basics of dApp.</p>
+        <h1>Lottery Test</h1>
+        <p>
+          - Truffle development framework <br>
+          - Local: Ganache   Test Net: Ropsten, kovan, Rinkeby <br>
+          - Use Infura API to connect test network <br>
+          - Simple interaction with web3 and solidity contract <br>
+          - VRF chain link to get random numbers<br>
+          - Testing the smart contract using JavaScript<br>
+      </p>
+      </div>
+    </header>
+
+    <section id="about">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h3>Buy Ticket</h3>
+            <p class="lead">Each ticket is only <span id="ticketPrice" style="font-weight: bold;">_</span>eth.</p>
+            <div style="text-align:center;">
+              <button class="btn btn-primary buyTicket" id="buyTicket1" type="button">Ticket 1</button>
+              <button class="btn btn-primary buyTicket" id="buyTicket2" type="button">Ticket 2</button>
+              <button class="btn btn-primary buyTicket" id="buyTicket3" type="button">Ticket 3</button>
+              <button class="btn btn-primary buyTicket" id="buyTicket4" type="button">Ticket 4</button>
+              <button class="btn btn-primary buyTicket" id="buyTicket5" type="button">Ticket 5</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="winner">
+      <div class="container py-4">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h5>Winner : </h5> <p id="h_winner">_</p>
+            <h5>Lottery Address : </h5> <p id="h_addr">_</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <h3 class="m-0 text-center text-white">Made by <a href="https://github.com/Pyweb-Master/" style="color: blue">Pyweb Master.</a></h3>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/ethprice.js"></script>
+
+  </body>
+
+</html>
